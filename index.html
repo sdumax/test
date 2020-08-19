@@ -3,9 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
     <title>test file</title>
 </head>
 <body>
-    <h1>a nice new headline</h1>
+    <header>
+        <nav class="navbar">
+            <a href="/" class="nav-logo"><img src="./img/logo.png" alt=""></a>
+            
+            <ul class="nav-list">
+                <li class=""> <a href="">Contact Me </a> </li>
+                <li class=""><a href="">Blog</a></li>
+                <li class=""><a href="">My works</a></li>
+                <li class=""><a href="">About</a></li>
+            </ul>
+            <span class="open-slide">
+                <a href="#" onclick="openMenu()">link</a>
+            </span>
+        </nav>
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeMenu()">&times;</a>
+            <ul class="">
+                <li class=""> <a href="">about</a> </li>
+                <li class=""><a href="">my works</a></li>
+                <li class=""><a href="">blog</a></li>
+                <li class=""><a href="">contact me</a></li>
+            </ul>
+        </div>
+        
+    </header>
+
+    <section class="welcome">
+        <div class="float-right mr-20">
+            <h6 class="white-text txt-shadow mt-60">Hello There</h6>
+            <h1 class="white-text txt-shadow">I Am Maxwell</h1>
+            <div>
+                <p class="white-text txt-shadow">Full Stack Developer</p>
+            </div>
+            <div class="my-social-list">
+                <ul>
+                    <li class="mb-10"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="mb-10"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li class="mb-10"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li class="mb-10"><a href="#"><i class="fa fa-behance"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+     <!--start testimonial section-->
+     <section class="testimonial-section ptb-80 bg-secondary">
+         <div class="counter-area">
+                        
+                        <h2>What I Can Do</h2>
+                            <div class="text-center counter-info counter-box icolor-3">
+                                <i class="fa fa-cubes" aria-hidden="true"></i>
+                                <strong><span class="counter">Database Design</span></strong>
+                                <span class="count-description">Designed well structred and scaleable detabases.</span>
+                            </div>
+                        
+                        
+                            <div class="text-center counter-info counter-box icolor-2">
+                                <i class="fa fa-trophy" aria-hidden="true"></i>
+                                <strong><span class="counter">Responsive Websites</span></strong>
+                                <span class="count-description">Built websites that are multi-device compactible</span>
+
+                            </div>
+                        
+                        
+                            <div class="text-center counter-info counter-box icolor-4">
+                                <i class="fa fa-smile-o" aria-hidden="true"></i>
+                                <strong><span class="counter">Web Application Development</span></strong>
+                                <span class="count-description">Develop web applications that are seamless in operation</span>
+
+                            </div>
+                        
+                        
+                            <div class="text-center counter-info counter-box icolor-1">
+                                <i class="fa fa-coffee" aria-hidden="true"></i>
+                                <strong><span class="counter">Technical Services</span></strong>
+                                <span class="count-description">Managed company services and solutions our technical team ready.</span>
+
+                            </div>
+                        
+                    </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    <!--end testimonial section-->
+   
+
+
+   
+    <!-- start contact section--> 
+    <section id="contact" class="contact-me-section ptb-80 centered" style="background: url('./img/contact.jpeg')no-repeat center / cover;">
+    
+                    <div class="headingOne">
+                        <h6 class="sub">Reach Us Quickly</h6>
+                        <h2>Contact Us</h2>
+                    </div>
+                    
+                        <form id="contactForm1" action="#" method="POST">
+                            <div class="row">
+                                
+                                    <div class="form-group">
+                                        <input id="name1" name="name" type="text"
+                                                class="form-control" required
+                                                placeholder="Your name">
+                                    </div>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <input id="email1" name="email" type="email"
+                                                class="form-control" required=""
+                                                placeholder="Your email">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <input id="phone" name="phone" type="text"
+                                                class="form-control" required=""
+                                                placeholder="Your phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                            <textarea id="message1" name="message" class="form-control"
+                                                        rows="4" required=""
+                                                        placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="biz-btn-solid">Send Message
+                                </button>
+                            </div>
+                        </form>
+</section>
+<!--end contact section-->
+
+<!--start footer top section-->
+<!-- <section class="footer-top-section pt-50 pb-30">
+    <div class="footer-top-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="single-footer-top">
+                        <div class="footer-top-icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="footer-top-text">
+                            <h5>Address</h5>
+                            <p>16122 Collins Street West. <br> Victoria 8007</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="single-footer-top">
+                        <div class="footer-top-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="footer-top-text">
+                            <h5>Call ME</h5>
+                            <p>Office: <a href="tel:+2348145230338">+2348145230338</a>  <br> WhatsApp: <a href="http://wa.me/2348145230338"></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="single-footer-top">
+                        <div class="footer-top-icon">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                        <div class="footer-top-text">
+                            <h5>Work Hours</h5>
+                            <p>Monday - Friday : 09am - 18pm <br> Saturday : 09am - 1pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!--end footer top section
+
+<!--start footer section-->
+<footer class="footer ptb-30">
+    <div class="footer-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <div class="footer-social">
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i> Linkedin</a></li>
+                               
+                            </ul>
+                        </div>
+                        <div class="footer-copyright">
+                            <p>&copy; 2020 MTech Inc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--end footer section-->
+
+
+
+
+    <script>
+        function openMenu(){
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('main').style.marginLeft = '250px';
+
+        }
+        function closeMenu(){
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';
+
+        }
+    </script>
 </body>
 </html>
